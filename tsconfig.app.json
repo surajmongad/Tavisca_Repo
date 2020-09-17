@@ -14,4 +14,7 @@
   "include": [
     "src/**/*.d.ts"
   ]
+    "exclude": [
+    "**/*.stories.*"
+  ]
 }
