@@ -1,0 +1,193 @@
+{
+  "login": [
+    {
+      "email": "sm@gmail.com",
+      "password": "test",
+      "id": "zjFjse7"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "T6x5CKj"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "fDgGN98"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "ilANj-M"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "fDigb13"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "vXT-SYi"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "qYAIexr"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "YTx1SSJ"
+    },
+    {
+      "email": "surajmongad@gmail.com",
+      "password": "suraj",
+      "id": "gStRP9A"
+    },
+    {
+      "email": "sm@gmail.com",
+      "password": "sm2020",
+      "id": "6geV7Pr"
+    },
+    {
+      "email": "s@gmail.com",
+      "password": "s",
+      "id": "yRomF6j"
+    },
+    {
+      "email": "surajmongad@gmail.com",
+      "password": "suraj2020",
+      "id": "dh0IEd6"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "surajmongad",
+      "id": "ZlEEe2A"
+    },
+    {
+      "email": "sm@gmail.com",
+      "password": "sdsdssdsdsds",
+      "id": "efOh5Y4"
+    },
+    {
+      "email": "sdsds@gmail.com",
+      "password": "sdsdsddsdsdsdsdssdsdsdsdsdsdsdsdsds",
+      "id": "wvbgT51"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "smongad",
+      "id": "94s4piM"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "LyKpmHU"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "KtH2fUm"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "PA9gXSJ"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "_jetij6"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "9q_qGKS"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "W2r1532"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "ayxfB8P"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "ke6QP2E"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "-pNNpDY"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "MHVbBWE"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "ypKQkTh"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "4SQdb1M"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "WtzifuS"
+    },
+    {
+      "email": "smongad@gmail.com",
+      "password": "suraj2020",
+      "id": "1B9CbWA"
+    },
+    {
+      "email": "sm@gmail.com",
+      "password": "suraj2020",
+      "id": "HqoYAY-"
+    }
+  ],
+  "register": [
+    {
+      "id": "1",
+      "username": "suraj",
+      "email": "smongad@gmail.com",
+      "password": "suraj2020"
+    },
+    {
+      "email": "sdsds@gmail.com",
+      "password": "sddssdsdsd",
+      "id": "Wi4dbR8"
+    },
+    {
+      "email": "sm@gmail.com",
+      "password": "suraj2020",
+      "id": "_zYahUb"
+    }
+  ],
+  "products": [
+    {
+      "productName": "sSD",
+      "productNumber": 2,
+      "productCategory": "DDDDF",
+      "productPrice": 12342,
+      "id": 1
+    },
+    {
+      "productName": "Jeans",
+      "productNumber": 4,
+      "productCategory": "Ware",
+      "productPrice": 1000,
+      "id": 2
+    }
+  ]
+}

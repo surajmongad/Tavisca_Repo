@@ -1,0 +1,10 @@
+<div class="login-page">
+  <h2>Login To Your Account</h2>
+  <form (ngSubmit)="onSubmit()" ngNativeValidate aria-label="Username field of login">
+    <div *ngIf="incorrectError" class="login-error m-b-10">Username or password is incorrect.</div>
+    <input [(ngModel)]="user.email" name="email" type="email" required id="email" placeholder="Email" aria-label="Username field of login">
+    <input [(ngModel)]="user.password" name="password" type="password" required id="password" placeholder="Password" aria-label="Passworld field of login">
+    <button class="btn btn-login" type="submit" value="Log in" aria-label="Login button">Login</button>
+    <button class="btn btn-cancel" [routerLink]="['/home']" type="submit" aria-label="Cancel button">Cancel</button>
+  </form>
+</div>

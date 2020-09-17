@@ -1,0 +1,11 @@
+<h2 class="m-l-26">Product List</h2>
+<div class="grid-container-list">
+  <div class="grid-item" *ngFor="let product of products">
+    <div class="texts">
+      <h5>Product Name: {{ product.productName }}</h5>
+      <h6>Product Number: {{product.productNumber}}</h6>
+      <h6>Product Category: {{ product.productCategory }}</h6>
+      <h6>Product Price: {{product.productPrice}}</h6>
+    </div>
+  </div>
+</div>

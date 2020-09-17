@@ -1,0 +1,263 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(195 202 218 / 59%);
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.grid-container-main {
+    padding: 20px 20px;
+}
+
+// Basic Button Style
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid rgb(7, 7, 7);
+    padding: 0.1rem 0.3rem;
+    font-size: 0.8rem;
+    line-height: 2;
+    border-radius: 5px;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+    &:hover,
+    &:focus {
+        background-color: #212529;
+        color: white;
+    }
+}
+
+// Basic input Style
+input {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    color: #000;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    font-size: 14px;
+    //font-wieght: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.2s linear;
+    background-color: #fff !important;
+    &input:focus {
+        color: #333;
+        border: 1px solid #44c4e7;
+    }
+}
+
+// header comman css
+.grid-container-header {
+    display: grid;
+    grid-template-columns: auto 111px 65px 73px;
+    grid-gap: 30px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+}
+
+// login and registration page common css
+.login-page,
+.signup-page,
+.add-product-page,
+.edit-product-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: 430px;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+    h2 {
+        margin: 0 0 20px;
+        line-height: 1;
+        color: rgb(51, 51, 51);
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #3030ff;
+    }
+
+    .btn-login {
+        margin-right: 20px;
+    }
+
+    .login-error {
+        color: red;
+    }
+
+}
+
+// grid list page common css
+
+.grid-container-list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10px;
+
+    .grid-item {
+        font-size: 20px;
+        box-shadow: 0 16px 11px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: left;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        word-break: break-all;
+        margin: 10px;
+
+
+        .texts {
+            h5 {
+                margin: 10px;
+            }
+
+            h6 {
+                margin: 12px;
+                font-size: 16px;
+            }
+        }
+
+        .buttons {
+            .common-btn {
+                padding: 0px 12px;
+                font-size: 14px;
+            }
+
+            .edit {
+                @extend .common-btn;
+            }
+
+            .delete {
+                @extend .common-btn;
+
+                &:hover,
+                &:focus {
+                    background-color: rgb(233, 120, 14);
+                    color: white;
+                    border: 1px solidr rgb(233, 120, 14);
+                }
+            }
+
+        }
+    }
+}
+
+
+
+/* Responsive columns */
+@media screen and (max-width: 992px) {
+    .grid-container-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container-main {
+        padding: 6px 0px;
+    }
+
+    .grid-container-list {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+
+    .grid-container-header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 0px;
+
+        .item-1,
+        .item-2,
+        .item-3,
+        .item-4,
+        .item-5 {
+            margin: 10px;
+        }
+
+        .item-1 {
+            order: 1;
+        }
+
+        .item-2 {
+            order: 2;
+        }
+
+        .item-3 {
+            order: 3;
+        }
+
+        .item-4 {
+            order: 1;
+        }
+
+        .item-5 {
+            order: 5;
+        }
+
+
+    }
+
+    .login-page,
+    .signup-page,
+    .add-product-page,
+    .edit-product-page {
+        width: 330px;
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .grid-container-list {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+}
+
+
+//margin and padding utilities
+
+$spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m-#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px;
+        }
+
+        .p-#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<div class="signup-page">
+  <h2>Registration</h2>
+  <form (ngSubmit)="onSubmit()" ngNativeValidate aria-label="Signup form">
+    <input [(ngModel)]="user.email" name="email" type="email" required placeholder="Email" id="email" aria-label="UserName Field Of Signup">
+    <input [(ngModel)]="user.password" name="password" type="password" required placeholder="Password" id="password" aria-label="Password Field Of Signup">
+    <button class="btn btn-login" type="submit" value="SignUp">Signup</button>
+    <button class="btn btn-cancel" [routerLink]="['/']">Cancel</button>
+    <p>
+      <span>Already have an account?&nbsp;</span>
+      <a [routerLink]="['/log-in']">Log in!</a>
+    </p>
+  </form>
+</div>

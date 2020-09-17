@@ -1,0 +1,11 @@
+<div class="add-product-page">
+  <h2>Add Product</h2>
+  <form (ngSubmit)="onSubmit()" ngNativeValidate aria-label="Add Product Form">
+    <input type="text" [(ngModel)]="product.productName" name="productName" id="productName" placeholder="Enter Product Name" required autofocus aria-label="Product Name Field">
+    <input type="number" [(ngModel)]="product.productNumber" name="productNumber" id="productNumber" placeholder="Enter Product Number" required aria-label="Product Number Field">
+    <input type="text" [(ngModel)]="product.productCategory" name="productCategory" id="productCategory" placeholder="Enter Product Category" required aria-label="Product Category Field">
+    <input type="number" [(ngModel)]="product.productPrice" name="productPrice" id="productPrice" placeholder="Enter Product Price" required aria-label="Product Price Field">
+    <button class="btn btn-login" type="submit" name="submit" type="submit" value="Submit" aria-label="Add Product Button">Add</button>
+    <button class="btn btn-cancel" [routerLink]="['/list-product']" aria-label="Cancel Product Button">Cancel</button>
+  </form>
+</div>

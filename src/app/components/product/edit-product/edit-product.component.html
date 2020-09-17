@@ -1,0 +1,11 @@
+<div class="edit-product-page">
+    <h2>Edit Product</h2>
+    <form [formGroup]="editform" (ngSubmit)="submit()" ngNativeValidate aria-label="Edit Product Form">
+        <input type="text" name="productName" id="productName" formControlName="productName" required placeholder="Add Product Name" aria-label="Add Product Field">
+        <input type="number" name="productNumber" id="productNumber" formControlName="productNumber" required placeholder="Add Product Number" aria-label="Add Product Number">
+        <input type="text" name="productCategory" id="productCategory" formControlName="productCategory" required placeholder="Add Product Category" aria-label="Add Product Category">
+        <input type="number" name="productPrice" id="productPrice" formControlName="productPrice" required placeholder="Add Product Price" aria-label="Add Product Price">
+        <button class="btn btn-login" type="submit" [disabled]="!editform.valid" value="Submit" aria-label="Edit Product Button">Edit</button>
+        <button class="btn btn-cancel" [routerLink]="['/list-product']" aria-label="Cancel Product Button">Cancel</button>
+    </form>
+</div>
